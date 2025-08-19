@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shaestha's Portfolio</title>
+    <script>
+        // Load CSS from style.html into this page
+        fetch("style.html")
+            .then(res => res.text())
+            .then(css => {
+                let styleContent = new DOMParser().parseFromString(css, "text/html");
+                document.head.appendChild(styleContent.querySelector("style"));
+            });
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Shaestha Kownain</h1>
+        <p>B.Tech AIML | SR University</p>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- About -->
+    <section id="about">
+        <h2>About Me</h2>
+        <img src="image/shaestha.jpg" alt="Shaestha Kownain">
+        <p>Hello! I'm <b>Shaestha Kownain</b>, passionate about Artificial Intelligence, Machine Learning, and Data Science. I enjoy building intelligent systems and solving real-world problems.</p>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <article>
+            <h3>CNN Ensemble for Pneumonia Detection</h3>
+            <p>Built an ensemble deep learning model (ResNet, EfficientNet, DenseNet, MobileNet) – 94% accuracy.</p>
+        </article>
+        <article>
+            <h3>PSO-ANN Solar Radiation Prediction</h3>
+            <p>Hybrid PSO + ANN model for solar forecasting – 92% accuracy.</p>
+        </article>
+        <article>
+            <h3>Ionization Dataset Analysis</h3>
+            <p>Applied ML algorithms (Random Forest, SVM) – 89% accuracy.</p>
+        </article>
+        <article>
+            <h3>Virtual Herbal Garden – SIH 2024</h3>
+            <p>Web app for plant recognition & medicinal recommendation system.</p>
+        </article>
+    </section>
+
+    <!-- Achievements -->
+    <section id="achievements">
+        <h2>Achievements</h2>
+        <ul>
+            <li>Finalist – Smart India Hackathon 2024</li>
+            <li>Microsoft Azure AI Fundamentals Certified</li>
+            <li>Top CGPA: 9.95 in B.Tech (AIML)</li>
+        </ul>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience">
+        <h2>Experience</h2>
+        <article>
+            <h3>AI-ML Virtual Intern | Google for Developers, AICTE</h3>
+            <p>Worked on ML algorithms, classification & clustering models.</p>
+        </article>
+        <article>
+            <h3>Data Science Master Intern | Altair</h3>
+            <p>Applied data workflows including EDA, modeling & visualization.</p>
+        </article>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:shaestha98@gmail.com">shaestha98@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/shaestha-kownain-664228300" target="_blank">Shaestha Kownain</a></p>
+        <p>Location: Warangal, India</p>
+    </section>
+
+    <footer>
+        <p>© 2025 Shaestha Kownain | Portfolio</p>
+    </footer>
+</body>
+</html>
